@@ -2,17 +2,13 @@ import dark from "./dark.png";
 import light from "./light.png";
 import { Button } from "../ui/button";
 import Sidebar from "./Sidebar";
-import { useState } from "react";
 import { useEffect } from "react";
 import { Moon, Sun } from "lucide-react";
-const Navbar = () => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+import useThemeStore from '@/store/Theme.js';
 
-  const handleTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
-    setTheme(newTheme);
-    localStorage.setItem("theme", newTheme);
-  };
+const Navbar = () => {
+  const theme = useThemeStore((state) => state.theme);
+  const toggleTheme = useThemeStore((state) => state.toggleTheme);
 
   useEffect(() => {
     document.body.className = theme;
@@ -45,7 +41,7 @@ const Navbar = () => {
         </a>
       </div>
       <div className="flex items-center">
-        <button onClick={handleTheme}>
+        <button onClick={toggleTheme}>
           {theme === "dark" ? (
             <Sun className="hover:bg-background rounded-full w-5 sm:w-10" />
           ) : (

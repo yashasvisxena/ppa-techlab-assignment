@@ -1,18 +1,21 @@
 import dark from "../header/dark.png";
+import light from "../header/light.png";
 import { Instagram, Facebook, Twitter, Youtube } from "lucide-react";
-
+import useThemeStore from "@/store/Theme.js";
 const Footer = () => {
+  const theme = useThemeStore((state) => state.theme);
   return (
     <footer className="bg-foreground text-background p-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-          <img src={dark} alt="Nexcent Logo" className="mb-4" />
+          <img
+            src={theme === "dark" ? light : dark}
+            alt="Nexcent Logo"
+            className="mb-4"
+          />
           <p>Copyright © 2020 Nexcent ltd. All rights reserved</p>
           <div className="container mx-auto mt-8 flex justify-center space-x-4">
-            <a
-              href="#instagram"
-              className="text-gray-400 "
-            >
+            <a href="#instagram" className="text-gray-400 ">
               <Instagram />
             </a>
             <a href="#facebook" className="text-gray-400 ">
