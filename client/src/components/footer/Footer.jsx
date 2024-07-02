@@ -13,18 +13,18 @@ const Footer = () => {
             alt="Nexcent Logo"
             className="mb-4"
           />
-          <p>Copyright © 2020 Nexcent ltd. All rights reserved</p>
+          <p>Copyright © 2024 Nexcent ltd. All rights reserved</p>
           <div className="container mx-auto mt-8 flex justify-center space-x-4">
-            <a href="#instagram" className="text-gray-400 ">
+            <a href="#instagram" className=" ">
               <Instagram />
             </a>
-            <a href="#facebook" className="text-gray-400 ">
+            <a href="#facebook" className=" ">
               <Facebook />
             </a>
-            <a href="#twitter" className="text-gray-400 ">
+            <a href="#twitter" className=" ">
               <Twitter />
             </a>
-            <a href="#youtube" className="text-gray-400 ">
+            <a href="#youtube" className=" ">
               <Youtube />
             </a>
           </div>
