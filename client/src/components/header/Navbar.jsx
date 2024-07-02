@@ -22,9 +22,9 @@ const Navbar = () => {
       <div className="flex items-center gap-2">
         <Sidebar />
         <img src={theme === "dark" ? dark : light} alt="logo" className="h-4 sm:h-6" />
-        <p className="text-lg text-center sm:text-xl font-bold">Nexcent</p>
+        <p className="text-lg text-center sm:text-xl lg:text-2xl font-bold">Nexcent</p>
       </div>
-      <div className="hidden md:gap-4 lg:gap-[50px] text-foreground sm:flex md:text-sm items-center">
+      <div className="hidden md:gap-4 lg:gap-[50px] text-foreground sm: text-sm sm:flex lg:text-base items-center font-semibold">
         <a href="#" className="">
           Home
         </a>
