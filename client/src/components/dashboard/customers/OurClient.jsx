@@ -23,7 +23,7 @@ const OurClient = () => {
             key={index}
             src={image}
             alt={`client ${index}`}
-            className="md:h-12 h-10 mx-4 lg:mx-auto"
+            className="md:h-12 h-10 mx-4 lg:mx-6 object-contain transform transition-transform duration-200 hover:scale-125"
           />
         ))}
       </div>
