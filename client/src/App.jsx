@@ -4,6 +4,7 @@ import Footer from './components/footer/Footer'
 import Sliding from './components/dashboard/carousel/Carousel'
 import Countup from './components/dashboard/countup/Countup'
 import OurClient from './components/dashboard/customers/OurClient'
+import BlogPost from './components/dashboard/blog/BlogPost'
 function App() {
   
 
@@ -13,6 +14,7 @@ function App() {
       <Sliding/>
       <OurClient/>
       <Countup/>
+      <BlogPost/>
       <Footer/>
     </div>
   )
