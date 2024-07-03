@@ -40,7 +40,7 @@ const Countup = () => {
             We reached here with our hard work and dedication
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-items-center lg:justify-items-start">
+        <div className="lg:w-3/6 grid grid-cols-1 md:grid-cols-2 gap-10 justify-items-center lg:justify-items-start">
           {data.map((dat, index) => (
             <div
               key={index}
